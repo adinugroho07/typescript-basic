@@ -1,0 +1,13 @@
+Bab Compile
+tsc namafile.ts --> compile file ts menjadi file js secara 1-1 file ts
+tsc namafile.ts --watch/w --> compile file ts menjadi file js dan akan secara otomatis mengcompile lagi jika ada perubahan di file ts nya.
+tsc --init --> akan membuat config typescript (file tsconfig.json) yang akan di run setiap kali di compile file ts nya.
+tsc --> akan mengcompile seluruh file ts yang ada di project dan tergantung dari config ts nya di file tsconfig.json
+
+pada key "target" di situ kita men state version JS yang akan menjadi hasil dari compile file ts.
+pada key "lib" di situ kita men state library JS yang akan kita gunakan seperti "DOM","DOM.Iterable","ES6","ScriptHost" dll
+pada key "outDir" di situ kita men state JS file hasil compile dari file ts tersebut akan di store di folder mana.
+pada key "rootDir" di situ kita men state root directory dari file ts kita misal di dir src, jadi file ts yang di luar atau di atas dari dir src
+                   tersebut akan tetap di compile namun hasil compile nya tidak akan berada di folder yang di state pada key "outDir"
+pada key "removeComments" dia akan menghapus seluruh comment yang ada di file JS hasil compile dari file ts. ini bisa di gunakan untuk reduce file size
+pada key "noEmitOnError" jika di set true maka dia tidak akan mencompile file ts jika masih ada file ts yang error.

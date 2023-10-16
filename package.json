@@ -1,0 +1,24 @@
+{
+  "name": "belajar-typescript",
+  "version": "1.0.0",
+  "description": "belajar typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adinugroho07/typescript-basic.git"
+  },
+  "author": "Adi Nugroho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adinugroho07/typescript-basic/issues"
+  },
+  "homepage": "https://github.com/adinugroho07/typescript-basic#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "lite-server": "^2.5.4"
+  }
+}
